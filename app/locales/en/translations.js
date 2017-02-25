@@ -1055,132 +1055,6 @@ export default {
       requestSavedMessage: 'The lab request has been saved.'
     }
   },
-  patients: {
-    navigation: {
-      photos: 'Photos',
-      general: 'General',
-      history: 'History',
-      appointments: 'Appointments',
-      visits: 'Visits',
-      medication: 'Medication',
-      imaging: 'Imaging',
-      labs: 'Labs',
-      socialWork: 'Social Work'
-    },
-    titles: {
-      addContact: 'Add Contact',
-      admittedPatients: 'Admitted Patients',
-      expenses: 'Expenses',
-      additionalContacts: 'Additional Contacts',
-      familyInformation: 'Family Information',
-      delete: 'Delete Patient',
-      new: 'New Patient',
-      edit: 'Edit Patient',
-      patient: 'Patient Report',
-      patientListing: 'Patient Listing',
-      patientReport: 'Patient Report',
-      addPhoto: 'Add Photo',
-      editPhoto: 'Edit Photo',
-      socialWork: 'Expense',
-      familyInfo: 'Family Info',
-      deleteFamilyMember: 'Delete Family Member',
-      deleteExpense: 'Delete Expense',
-      deletePhoto: 'Delete Photo',
-      deleteContact: 'Delete Contact',
-      savedPatient: 'Patient Saved',
-      todaysOutpatients: 'Today\'s Outpatients',
-      admissionsDetail: 'Admissions Detail',
-      admissionsSummary: 'Admissions Summary',
-      diagnosticTesting: 'Diagnostic Testing',
-      dischargesDetail: 'Discharges Detail',
-      dischargesSummary: 'Discharges Summary',
-      proceduresDetail: 'Procedures Detail',
-      proceduresSummary: 'Procedures Summary',
-      patientStatus: 'Patient Status',
-      totalPatientDays: 'Total Patient Days',
-      totalPatientDaysDetailed: 'Total Patient Days (Detailed)',
-      visit: 'Visit',
-      deletePatientRecord: 'Delete Patient Record',
-      outpatientsForDate: 'Outpatients for {{visitDate}}'
-    },
-    messages: {
-      areYouSureDelete: 'Are you sure you want to delete this {{object}}?',
-      deletePatient: 'Are you sure you wish to delete {{firstName}} {{lastName}}?',
-      noPatientsFound: 'No patients found.',
-      savedPatient: 'The patient record for {{displayName}} has been saved.',
-      notFoundQuickAdd: 'The patient <strong>{{patientFullName}}</strong> could not be found.  If you would like to create a new patient, fill in the information below.  Otherwise press the Cancel button to return.',
-      createNewPatient: 'Create a new patient record?',
-      deletingPatient: 'Deleting patient and all associated records'
-    },
-    buttons: {
-      addExpense: 'Add Expense',
-      addContact: 'Add Contact',
-      addOperativePlan: 'Add Operative Plan',
-      editOperativePlan: 'Current Operative Plan',
-      newLab: 'New Lab',
-      newVisit: 'New Visit',
-      newMedication: 'New Medication',
-      newImaging: 'New Imaging',
-      addFamilyMember: 'Add Family Member',
-      newPhoto: 'New Photo',
-      newAppointment: 'New Appointment',
-      backToPatients: 'Back to Patient List',
-      newPatient: '+ new patient',
-      patientCheckIn: 'Patient Check In',
-      scheduleSurgery: 'Schedule Surgery'
-    },
-    labels: {
-      primaryDiagnosis: 'Primary Diagnoses',
-      secondaryDiagnosis: 'Secondary Diagnoses',
-      monthlyCost: 'Monthly Cost',
-      totalMontlyExpense: 'Total Monthly Expenses',
-      patientType: 'Patient Type',
-      admissionDate: 'Admission Date',
-      patientDays: 'Patient Days',
-      dischargeDate: 'Discharge Date',
-      admit: 'Admit',
-      relationships: 'Relationships',
-      phone: 'Phone',
-      email: 'Email',
-      firstName: 'First Name',
-      middleName: 'Middle Name',
-      lastName: 'Last Name',
-      sex: 'Sex',
-      dob: 'DOB',
-      dateOfBirth: 'Date Of Birth',
-      placeOfBirth: 'Place Of Birth',
-      sources: 'Sources',
-      cost: 'Cost',
-      civilStatus: 'Civil Status',
-      relationship: 'Relationship To Patient',
-      education: 'Education',
-      occupation: 'Occupation',
-      income: 'Income',
-      insurance: 'Insurance',
-      dateProcessed: 'Date Processed',
-      status: 'Patient Status',
-      externalPatientId: 'External Patient Id',
-      bloodType: 'Blood Type',
-      clinic: 'Clinic Site',
-      referredBy: 'Referred By',
-      referredDate: 'Referred Date',
-      religion: 'Religion',
-      parent: 'Parent/Guardian',
-      contacts: 'Contacts',
-      sexNotEntered: 'Sex Not Entered',
-      operativePlan: 'Operative Plan',
-      patientTypeCharity: 'Charity',
-      patientTypePrivate: 'Private'
-    },
-    notes: {
-      newNote: 'New Note for',
-      updateNote: 'Updating Note from',
-      onBehalfOfLabel: 'On Behalf Of',
-      onBehalfOfCopy: 'on behalf of',
-      pleaseSelectAVisit: 'Please select a visit'
-    }
->>>>>>> refactor imaging
-  },
   labs: {
     alerts: {
       requestCompletedMessage: 'The lab request has been completed.',
@@ -1289,6 +1163,51 @@ export default {
     userSaved: 'User Saved'
   },
   models: {
+    invoice: {
+      labels: {
+        billDate: 'Bill Date',
+        category: 'Category',
+        displayInvoiceNumber: 'Invoice ID',
+        externalInvoiceNumber: 'External Invoice #',
+        lineItems: 'Line Items',
+        name: 'Name',
+        paidTotal: 'Payments/Deposits',
+        patient: 'Patient',
+        payments: 'Payments',
+        paymentProfile: 'Payment Profile',
+        remarks: 'Remarks',
+        remainingBalance: 'Balance Due',
+        status: 'Status',
+        total: 'Total',
+        visit: 'Visit'
+      }
+    },
+    billingLineItem: {
+      labels: {
+        category: 'Category',
+        description: 'Description',
+        discount: 'Discount',
+        name: 'Name'
+      }
+    },
+    payment: {
+      labels: {
+        amount: 'Amount',
+        datePaid: 'Date',
+        expenseAccount: 'Credit To',
+        notes: 'Notes',
+        paymentType: 'Type'
+      }
+    },
+    pricing: {
+      labels: {
+        category: 'Category',
+        expenseAccount: 'Department',
+        name: 'Name',
+        price: 'Price',
+        pricingType: 'Type'
+      }
+    },
     imaging: {
       names: 'imaging',
       request: {
@@ -1610,9 +1529,85 @@ export default {
       secondaryDiagnosis: 'Secondary Diagnoses',
       sex: 'Sex',
       sexNotEntered: 'Sex Not Entered',
+<<<<<<< 3a28c7b34ca39dc0119e67c7c41ca962fe9aeaba
       sources: 'Sources',
       status: 'Patient Status',
       totalMontlyExpense: 'Total Monthly Expenses'
+=======
+      operativePlan: 'Operative Plan',
+      patientTypeCharity: 'Charity',
+      patientTypePrivate: 'Private'
+    },
+    notes: {
+      newNote: 'New Note for',
+      updateNote: 'Updating Note from',
+      onBehalfOfLabel: 'On Behalf Of',
+      onBehalfOfCopy: 'on behalf of',
+      pleaseSelectAVisit: 'Please select a visit'
+    }
+  },
+  billing: {
+    alerts: {
+      noInvoiceFound: 'No invoices found',
+      deleteItem: 'Are you sure you wish to delete {{item}}?',
+      noPricingItems: 'No pricing items found.',
+      noPricingProfiles: 'No pricing profiles found.'
+    },
+    buttons: {
+      createInvoice: 'Create an invoice?',
+      addOverride: 'Add Override'
+    },
+    labels: {
+      actualCharges: 'Actual Charges',
+      insurance: 'National Insurance',
+      hmoCom: 'HMO/COM',
+      pricingPanelOverrides: 'Pricing profile overrides',
+      pricingProfile: 'Pricing Profile',
+      discountAmount: 'Discount Amount',
+      discountPercentage: 'Discount Percentage'
+    }
+  },
+  print: {
+    invoice: {
+      labels: {
+        patientName: 'NAME OF PATIENT:',
+        patientId: 'PATIENT #:',
+        patientAge: 'AGE:',
+        patientAddress: 'ADDRESS:',
+        dateAdmitted: 'ADMITTED:',
+        dateDischarged: 'DISCHARGE:',
+        dischargeNotes: 'Discharge Notes:',
+        remarks: 'Remarks:',
+        billedBy: 'Billed by:',
+        billedDate: 'Bill Date:',
+        spacer: '__________________________________________'
+      },
+      messages: {
+        whereConducted: 'were deducted during my confinement'
+      },
+      titles: {
+        patientMember: 'Patient-Member',
+        relContact: 'Relationship/Contact no.',
+        patients: 'PATIENT\'S',
+        billingStatement: 'BILLING STATEMENT'
+      }
+    }
+  },
+  procedures: {
+    titles: {
+      addChargeItem: 'Add Charge Item',
+      deleteChargeItem: 'Delete Charge Item',
+      editChargeItem: 'Edit Charge Item',
+      medicationUsed: 'Medication Used',
+      deleteMedicationUsed: 'Delete Medication Used',
+      addMedicationUsed: 'Add Medication Used',
+      editMedicationUsed: 'Edit Medication Used',
+      edit: 'Edit Procedure',
+      saved: 'Procedure Saved',
+      new: 'New Procedure'
+    },
+    labels: {
+      medicationUsed: 'Medication Used'
     },
     messages: {
       areYouSureDelete: 'Are you sure you want to delete this {{object}}?',
