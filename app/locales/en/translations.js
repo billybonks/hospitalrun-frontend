@@ -831,7 +831,6 @@ export default {
     notes: 'Notes',
     number: 'Number',
     on: 'on',
-    password: 'Password',
     patient: 'Patient',
     payments: 'Payments',
     physician: 'Physician',
@@ -861,7 +860,6 @@ export default {
     total: 'Total',
     type: 'Type',
     userCanAddNewValue: 'User Can Add New Values',
-    username: 'Username',
     value: 'Value',
     view: 'View',
     visit: 'Visit',
@@ -975,6 +973,16 @@ export default {
     userSaved: 'User Saved'
   },
   models: {
+    user: {
+      labels: {
+        displayName: 'Name',
+        displayRole: 'Role',
+        email: 'Email',
+        name: 'Username',
+        password: 'Password',
+        roles: 'Role'
+      }
+    },
     appointment: {
       labels: {
         allDay: 'All Day',
