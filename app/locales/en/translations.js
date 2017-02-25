@@ -471,10 +471,6 @@ export default {
       savedTitle: 'Imaging Request Saved'
     },
     buttons: { newButton: '+ new imaging' },
-    labels: {
-      addNewVisit: '--Add New Visit--',
-      radiologist: 'Radiologist'
-    },
     messages: { noCompleted: 'No completed items found.' },
     pageTitle: 'Imaging Requests',
     sectionTitle: 'Imaging',
@@ -865,6 +861,330 @@ export default {
     visit: 'Visit',
     'with': 'With'
   },
+  imaging: {
+    pageTitle: 'Imaging Requests',
+    sectionTitle: 'Imaging',
+    buttons: {
+      newButton: '+ new imaging'
+    },
+    messages: {
+      delete: 'Are you sure you wish to delete this imaging request?',
+      noCompleted: 'No completed items found.'
+    },
+    titles: {
+      completedImaging: 'Completed Imaging',
+      editTitle: 'Edit Imaging Request',
+      newTitle: 'New Imaging Request'
+    },
+    alerts: {
+      completedTitle: 'Imaging Request Completed',
+      completedMessage: 'The imaging request has been completed.',
+      savedTitle: 'Imaging Request Saved',
+      savedMessage: 'The imaging request has been saved.'
+    }
+  },
+  medication: {
+    pageTitle: 'Medication Requests',
+    sectionTitle: 'Medication',
+    returnMedication: 'Return Medication',
+    buttons: {
+      dispenseMedication: 'dispense medication',
+      newButton: '+ new request',
+      returnMedication: 'return medication'
+    },
+    titles: {
+      completedMedication: 'Completed Medication',
+      editMedicationRequest: 'Edit Medication Request',
+      newMedicationRequest: 'New Medication Request'
+    },
+    messages: {
+      createNew: 'Create a new medication request?',
+      confirmDeletion: 'Are you sure you wish to delete this medication request?'
+    },
+    labels: {
+      refills: 'Refills',
+      quantityRequested: 'Quantity Requested',
+      quantityDispensed: 'Quantity Dispensed',
+      quantityDistributed: 'Quantity Distributed',
+      quantityToReturn: 'Quantity To Return',
+      returnLocation: 'Return Location',
+      returnAisle: 'Return Aisle',
+      returnReason: 'Return Reason/Notes',
+      adjustmentDate: 'Adjustment Date',
+      creditToAccount: 'Credit To Account'
+    },
+    alerts: {
+      returnedTitle: 'Medication Returned',
+      returnedMessage: 'The medication has been marked as returned.',
+      savedTitle: 'Medication Request Saved',
+      savedMessage: 'The medication record has been saved.',
+      fulfilledTitle: 'Medication Request Fulfilled'
+    }
+  },
+  appointments: {
+    currentScreenTitle: 'Appointment List',
+    editTitle: 'Edit Appointment',
+    newTitle: 'New Appointment',
+    sectionTitle: 'Appointments',
+    thisWeek: 'Appointments This Week',
+    missed: 'Missed Appointments',
+    searchTitle: 'Search Appointments',
+    todayTitle: 'Today\'s Appointments',
+    calendarTitle: 'Appointments Calendar',
+    messages: {
+      appointmentSaved: 'The appointment for {{patient}} has been saved.',
+      deleteAppointmentMessage: 'Are you sure you wish to delete this appointment?',
+      endTimeLaterThanStart: 'Please select an end time later than the start time.'
+    },
+    buttons: {
+      newButton: '+ new appointment',
+      scheduleSurgery: '+ schedule surgery'
+    },
+    labels: {
+      noLocation: 'No Location',
+      selectedStartingDate: 'Show Appointments On Or After'
+    },
+    titles: {
+      appointmentSaved: 'Appointment Saved',
+      editSurgicalAppointment: 'Edit Surgical Appointment',
+      newSurgicalAppointment: 'New Surgical Appointment',
+      theaterSchedule: 'Theater Schedule'
+    }
+  },
+  vitals: {
+    messages: {
+      delete: 'Are you sure you wish to delete these vitals?'
+    },
+    labels: {
+      dateRecorded: 'Date Recorded',
+      temperature: 'Temperature',
+      weight: 'Weight',
+      height: 'Height',
+      sbp: 'SBP',
+      dbp: 'DBP',
+      heartRate: 'Heart Rate',
+      respiratoryRate: 'Respiratory Rate'
+    }
+  },
+  visits: {
+    titles: {
+      additionalDiagnoses: 'Additional Diagnoses',
+      checkedIn: 'Patient Checked In',
+      checkOut: 'Patient Check Out',
+      checkedOut: 'Patient Checked Out',
+      discharged: 'Patient Discharged',
+      editVisit: 'Edit Visit',
+      newVisit: 'New Visit',
+      patientCheckIn: 'Patient Check In',
+      visitSaved: 'Visit Saved'
+    },
+    messages: {
+      delete: 'Are you sure you wish to delete this visit?',
+      checkOut: 'Are you sure you wish to check out {{patientName}}?',
+      checkedOut: '{{patientName}} has been checked out.',
+      discharged: '{{patientName}} has been discharged.',
+      patientCheckedIn: '{{patientName}} has been checked in.',
+      patientCreatedAndCheckedIn: '{{patientName}} has been created and checked in.',
+      visitAndPatientSaved: 'The visit and patient records have been saved.',
+      visitSaved: 'The visit record has been saved.'
+    },
+    buttons: {
+      newProcedure: 'New Procedure',
+      newAppointment: 'New Appointment',
+      addDiagnosis: 'Add Diagnosis',
+      newVitals: 'New Vitals',
+      checkIn: 'Check In',
+      checkOut: 'Check Out',
+      discharge: 'Discharge'
+    },
+    labels: {
+      diagnosis: 'Diagnosis',
+      procedure: 'Procedure',
+      procedureDate: 'Procedure Date',
+      authoredBy: 'Authored By',
+      visitInformation: 'Visit Information',
+      examiner: 'Examiner',
+      status: 'Visit Status',
+      finalDiagnosis: 'Final/Billing Diagnosis',
+      visitDate: 'Visit Date',
+      visitType: 'Visit Type',
+      patientToCheckIn: 'Patient To Check In',
+      checkInTime: 'Check In',
+      checkOutTime: 'Check Out',
+      appointment: 'Appointment',
+      haveAppointment: 'Y',
+      noAppointment: 'N',
+      ordersDone: 'Orders Done',
+      haveDoneOrders: 'Y',
+      ordersNotDone: 'N',
+      reasonForVisit: 'Reason For Visit',
+      statusAdmitted: 'Admitted',
+      statusDischarged: 'Discharged',
+      statusCheckedIn: 'Checked In',
+      statusCheckedOut: 'Checked Out',
+      createNewPatient: 'Create New Patient'
+    },
+    navigation: {
+      charges: 'Charges',
+      notes: 'Notes',
+      orders: 'Orders',
+      procedures: 'Procedures',
+      vitals: 'Vitals'
+    }
+  },
+  labs: {
+    sectionTitle: 'Labs',
+    requestsTitle: 'Lab Requests',
+    editTitle: 'Edit Lab Request',
+    newTitle: 'New Lab Request',
+    deleteTitle: 'Delete Request',
+    completedTitle: 'Completed Labs',
+    labels: {
+      labType: 'Lab Type',
+      addNewVisit: '--Add New Visit--'
+    },
+    messages: {
+      noItemsFound: 'No labs found.',
+      createNewRecord: 'Create a new record?',
+      confirmDeletion: 'Are you sure you wish to delete this lab request?',
+      noCompleted: 'No completed items found.'
+    },
+    buttons: {
+      newButton: '+ new lab'
+    },
+    alerts: {
+      requestCompletedTitle: 'Lab Request Completed',
+      requestCompletedMessage: 'The lab request has been completed.',
+      requestSavedTitle: 'Lab Request Saved',
+      requestSavedMessage: 'The lab request has been saved.'
+    }
+  },
+  patients: {
+    navigation: {
+      photos: 'Photos',
+      general: 'General',
+      history: 'History',
+      appointments: 'Appointments',
+      visits: 'Visits',
+      medication: 'Medication',
+      imaging: 'Imaging',
+      labs: 'Labs',
+      socialWork: 'Social Work'
+    },
+    titles: {
+      addContact: 'Add Contact',
+      admittedPatients: 'Admitted Patients',
+      expenses: 'Expenses',
+      additionalContacts: 'Additional Contacts',
+      familyInformation: 'Family Information',
+      delete: 'Delete Patient',
+      new: 'New Patient',
+      edit: 'Edit Patient',
+      patient: 'Patient Report',
+      patientListing: 'Patient Listing',
+      patientReport: 'Patient Report',
+      addPhoto: 'Add Photo',
+      editPhoto: 'Edit Photo',
+      socialWork: 'Expense',
+      familyInfo: 'Family Info',
+      deleteFamilyMember: 'Delete Family Member',
+      deleteExpense: 'Delete Expense',
+      deletePhoto: 'Delete Photo',
+      deleteContact: 'Delete Contact',
+      savedPatient: 'Patient Saved',
+      todaysOutpatients: 'Today\'s Outpatients',
+      admissionsDetail: 'Admissions Detail',
+      admissionsSummary: 'Admissions Summary',
+      diagnosticTesting: 'Diagnostic Testing',
+      dischargesDetail: 'Discharges Detail',
+      dischargesSummary: 'Discharges Summary',
+      proceduresDetail: 'Procedures Detail',
+      proceduresSummary: 'Procedures Summary',
+      patientStatus: 'Patient Status',
+      totalPatientDays: 'Total Patient Days',
+      totalPatientDaysDetailed: 'Total Patient Days (Detailed)',
+      visit: 'Visit',
+      deletePatientRecord: 'Delete Patient Record',
+      outpatientsForDate: 'Outpatients for {{visitDate}}'
+    },
+    messages: {
+      areYouSureDelete: 'Are you sure you want to delete this {{object}}?',
+      deletePatient: 'Are you sure you wish to delete {{firstName}} {{lastName}}?',
+      noPatientsFound: 'No patients found.',
+      savedPatient: 'The patient record for {{displayName}} has been saved.',
+      notFoundQuickAdd: 'The patient <strong>{{patientFullName}}</strong> could not be found.  If you would like to create a new patient, fill in the information below.  Otherwise press the Cancel button to return.',
+      createNewPatient: 'Create a new patient record?',
+      deletingPatient: 'Deleting patient and all associated records'
+    },
+    buttons: {
+      addExpense: 'Add Expense',
+      addContact: 'Add Contact',
+      addOperativePlan: 'Add Operative Plan',
+      editOperativePlan: 'Current Operative Plan',
+      newLab: 'New Lab',
+      newVisit: 'New Visit',
+      newMedication: 'New Medication',
+      newImaging: 'New Imaging',
+      addFamilyMember: 'Add Family Member',
+      newPhoto: 'New Photo',
+      newAppointment: 'New Appointment',
+      backToPatients: 'Back to Patient List',
+      newPatient: '+ new patient',
+      patientCheckIn: 'Patient Check In',
+      scheduleSurgery: 'Schedule Surgery'
+    },
+    labels: {
+      primaryDiagnosis: 'Primary Diagnoses',
+      secondaryDiagnosis: 'Secondary Diagnoses',
+      monthlyCost: 'Monthly Cost',
+      totalMontlyExpense: 'Total Monthly Expenses',
+      patientType: 'Patient Type',
+      admissionDate: 'Admission Date',
+      patientDays: 'Patient Days',
+      dischargeDate: 'Discharge Date',
+      admit: 'Admit',
+      relationships: 'Relationships',
+      phone: 'Phone',
+      email: 'Email',
+      firstName: 'First Name',
+      middleName: 'Middle Name',
+      lastName: 'Last Name',
+      sex: 'Sex',
+      dob: 'DOB',
+      dateOfBirth: 'Date Of Birth',
+      placeOfBirth: 'Place Of Birth',
+      sources: 'Sources',
+      cost: 'Cost',
+      civilStatus: 'Civil Status',
+      relationship: 'Relationship To Patient',
+      education: 'Education',
+      occupation: 'Occupation',
+      income: 'Income',
+      insurance: 'Insurance',
+      dateProcessed: 'Date Processed',
+      status: 'Patient Status',
+      externalPatientId: 'External Patient Id',
+      bloodType: 'Blood Type',
+      clinic: 'Clinic Site',
+      referredBy: 'Referred By',
+      referredDate: 'Referred Date',
+      religion: 'Religion',
+      parent: 'Parent/Guardian',
+      contacts: 'Contacts',
+      sexNotEntered: 'Sex Not Entered',
+      operativePlan: 'Operative Plan',
+      patientTypeCharity: 'Charity',
+      patientTypePrivate: 'Private'
+    },
+    notes: {
+      newNote: 'New Note for',
+      updateNote: 'Updating Note from',
+      onBehalfOfLabel: 'On Behalf Of',
+      onBehalfOfCopy: 'on behalf of',
+      pleaseSelectAVisit: 'Please select a visit'
+    }
+>>>>>>> refactor imaging
+  },
   labs: {
     alerts: {
       requestCompletedMessage: 'The lab request has been completed.',
@@ -973,6 +1293,42 @@ export default {
     userSaved: 'User Saved'
   },
   models: {
+    imaging: {
+      names: 'imaging',
+      request: {
+        plural: 'imaging requests',
+        singular: 'imaging request'
+      }
+      labels: {
+        requestedDate: 'Date Requested',
+        imagingDate: 'Date Completed',
+        requestedBy: 'Requested By',
+        radiologist: 'Radiologists',
+        patient: 'Patient',
+        imagingType: 'Imaging Type',
+        results: 'Result',
+        notes: 'Notes',
+        visit: 'Visit'
+      },
+      placeholders: {
+        visit: '--Add New Visit--'
+      }
+    },
+    appointment: {
+      labels: {
+        status: 'First Name',
+        appointmentType: 'Type',
+        provider: 'With',
+        location: 'Location',
+        patient: 'Patient',
+        startDate: 'Start Date',
+        endDate: 'End Date',
+        allDay: 'All Day',
+        type: 'Type',
+        notes: 'Notes',
+        appointmentDate: 'Date'
+      }
+    },
     user: {
       labels: {
         displayName: 'Name',
@@ -1010,13 +1366,6 @@ export default {
       plural: 'forms',
       singular: 'form'
     } },
-    imaging: {
-      names: 'imaging',
-      request: {
-        plural: 'imaging requests',
-        singular: 'imaging request'
-      }
-    },
     incident: { names: {
       plural: 'incidents',
       singular: 'incident'
@@ -1050,7 +1399,10 @@ export default {
       singular: 'note'
     } },
     patient: {
-      labels: { name: 'Name' },
+      labels: {
+        name: 'Name',
+        displayName: 'Name'
+      },
       names: { singular: 'Patient' }
     },
     procedure: { names: {
