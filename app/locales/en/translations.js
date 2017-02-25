@@ -1066,7 +1066,28 @@ export default {
     vital: { names: {
       plural: 'vitals',
       singular: 'vital'
-    } }
+    } },
+    labs: {
+      labels: {
+        labDate: 'Date Completed',
+        notes: 'Notes',
+        patient: 'Patient',
+        labType: 'Lab Type',
+        requestedBy: 'Requested By',
+        requestedDate: 'Date Requested',
+        result: 'Results',
+        visit: 'Visit'
+      }
+    },
+    pricing: {
+      labels: {
+        category: 'Category',
+        expenseAccount: 'Department',
+        name: 'Name',
+        price: 'Price',
+        pricingType: 'Type'
+      }
+    }
   },
   navigation: {
     about: 'About HospitalRun',
