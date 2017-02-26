@@ -1418,7 +1418,7 @@ export default {
       plural: 'vitals',
       singular: 'vital'
     } },
-    labs: {
+    lab: {
       labels: {
         labDate: 'Date Completed',
         notes: 'Notes',
