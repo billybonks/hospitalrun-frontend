@@ -1257,7 +1257,7 @@ export default {
         requestedBy: 'Requested By',
         dateCompleted: 'Adjustment Date',
         transactionType: 'Transaction',
-        expenseAccount: 'Expense',
+        expenseAccount: 'Bill To',
         details: 'Details'
       }
     },
@@ -1277,7 +1277,9 @@ export default {
         expirationDate: 'Expiration Date',
         originalQuantity: 'Original Quantity',
         currentQuantity: 'Current Quantity',
-        costPerUnit: 'Cost per Unit'
+        costPerUnit: 'Cost per Unit',
+        deliveryAisle: 'Delivery Aisle',
+        deliveryLocation: 'Delivery Location',
       }
     },
     invLocation: {
