@@ -1,6 +1,6 @@
 <div class="row">
-  {{date-picker property="dateReceived" label=(t 'inventory.labels.dateReceived') class="col-sm-4"}}
-  {{em-input property="invoiceNo" label=(t 'inventory.labels.invoiceNumber') class="col-sm-4"}}
+  {{date-picker property="dateReceived" label=(t 'models.invPurchase.labels.dateReceived') class="col-sm-4"}}
+  {{em-input property="invoiceNo" label=(t 'models.invPurchase.labels.invoiceNo') class="col-sm-4"}}
 </div>
 {{#if canEditQuantity }}
   {{quantity-calc calculated=model.originalQuantity targetUnit=model.distributionUnit quantityGroups=model.quantityGroups unitList=unitList}}
@@ -11,18 +11,18 @@
   </div>
 {{/if}}
 <div class="row">
-  {{number-input property="purchaseCost" label=(t 'inventory.labels.purchaseCost') class="required col-sm-4 test-inv-cost"}}
-  {{em-input property="lotNumber" label=(t 'inventory.labels.serialNumber') class="col-sm-4"}}
+  {{number-input property="purchaseCost" label=(t 'models.invPurchase.labels.purchaseCost') class="required col-sm-4 test-inv-cost"}}
+  {{em-input property="lotNumber" label=(t 'models.invPurchase.labels.lotNumber') class="col-sm-4"}}
 </div>
 <div class="row">
-  {{date-picker property="expirationDate" label=(t 'inventory.labels.expirationDate') minDate="now" class="col-sm-4"}}
+  {{date-picker property="expirationDate" label=(t 'models.invPurchase.labels.expirationDate') minDate="now" class="col-sm-4"}}
 </div>
 <div class="row">
-  {{select-or-typeahead property="vendor" label=(t 'inventory.labels.vendor') list=vendorList selection=model.vendor className="col-sm-6 required test-vendor"}}
-  {{em-input property="vendorItemNo" label=(t 'inventory.labels.vendorItemNumber') class="col-sm-6"}}
+  {{select-or-typeahead property="vendor" label=(t 'models.invPurchase.labels.vendor') list=vendorList selection=model.vendor className="col-sm-6 required test-vendor"}}
+  {{em-input property="vendorItemNo" label=(t 'models.invPurchase.labels.vendorItemNo') class="col-sm-6"}}
 </div>
 {{#if model.isNew}}
-  {{select-or-typeahead property="location" label=(t 'inventory.labels.location') list=warehouseList selection=model.location }}
-  {{select-or-typeahead property="aisleLocation" label=(t 'inventory.labels.aisleLocation') list=aisleLocationList selection=model.aisleLocation }}
+  {{select-or-typeahead property="location" label=(t 'models.invPurchase.labels.location') list=warehouseList selection=model.location }}
+  {{select-or-typeahead property="aisleLocation" label=(t 'models.invPurchase.labels.aisleLocation') list=aisleLocationList selection=model.aisleLocation }}
 {{/if}}
-{{em-checkbox label=(t 'inventory.labels.gift') property="giftInKind"}}
+{{em-checkbox label=(t 'models.invPurchase.labels.giftInKind') property="giftInKind"}}
