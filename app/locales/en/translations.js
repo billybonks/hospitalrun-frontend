@@ -1246,6 +1246,17 @@ export default {
     }
   },
   models: {
+    invRequest: {
+      labels: {
+        inventoryItem: 'Item',
+        locationsAffected: 'Adjustment For',
+        adjustmentTypes: 'Adjustment Type',
+        quantity: 'Quantity',
+        reason: 'Reason',
+        dateCompleted: 'Adjustment Date',
+        expenseAccount: 'Expense'
+      }
+    },
     appointment: {
       labels: {
         status: 'First Name',

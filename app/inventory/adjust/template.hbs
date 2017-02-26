@@ -5,11 +5,11 @@
     updateButtonText=updateButtonText }}
   {{#em-form model=model submitButton=false }}
     <div class="form-group">
-      <label class="control-label">{{t 'inventory.labels.item'}}</label>
+      <label class="control-label">{{t 'models.invRequest.labels.item'}}</label>
       <p class="form-control-static">{{model.adjustmentItem.name}}</p>
     </div>
     <div class="form-group">
-      <label class="control-label">{{t 'inventory.labels.adjustmentFor'}}</label>
+      <label class="control-label">{{t 'models.invRequest.labels.locationsAffected'}}</label>
       <p class="form-control-static">{{model.locationName}}</p>
     </div>
     <div class="form-group">
@@ -17,16 +17,16 @@
       <p class="form-control-static">{{model.quantity}}</p>
     </div>
     <div class="row">
-      {{em-select class="col-sm-4" label=(t 'inventory.labels.adjustmentType')
+      {{em-select class="col-sm-4" label=(t 'models.invRequest.labels.adjustmentType')
         property="transactionType" content=adjustmentTypes
         optionValuePath="type" optionLabelPath="name"
       }}
-      {{number-input property="adjustmentQuantity" label=(t 'labels.quantity') class="col-sm-3 required"}}
+      {{number-input property="adjustmentQuantity" label=(t 'models.invRequest.labels.quantity') class="col-sm-3 required"}}
     </div>
-    {{em-text label=(t 'inventory.labels.reason') property="reason" rows=3}}
+    {{em-text label=(t 'models.invRequest.labels.reason') property="reason" rows=3}}
     <div class="row">
-      {{date-picker property="dateCompleted" label=(t 'inventory.labels.adjustmentDate') class="col-sm-4 required"}}
-      {{select-or-typeahead property="expenseAccount" label=(t 'inventory.labels.expense') list=expenseAccountList selection=model.expenseAccount  class="col-sm-8"}}
+      {{date-picker property="dateCompleted" label=(t 'models.invRequest.labels.dateCompleted') class="col-sm-4 required"}}
+      {{select-or-typeahead property="expenseAccount" label=(t 'models.invRequest.labels.expenseAccount') list=expenseAccountList selection=model.expenseAccount  class="col-sm-8"}}
     </div>
   {{/em-form}}
 {{/modal-dialog}}
