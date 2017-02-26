@@ -1306,9 +1306,10 @@ export default {
         radiologist: 'Radiologists',
         patient: 'Patient',
         imagingType: 'Imaging Type',
-        results: 'Result',
+        result: 'Result',
         notes: 'Notes',
-        visit: 'Visit'
+        visit: 'Visit',
+        status: 'Status'
       },
       placeholders: {
         visit: '--Add New Visit--'
