@@ -1,33 +1,33 @@
 <div class="row">
   {{#unless model.isNew}}
     <div class="form-group col-sm-2">
-      <label>{{t 'labels.id'}}</label>
+      <label>{{t 'models.inventory.labels.id'}}</label>
       {{input class="form-control test-item-id" value=model.friendlyId type="text" disabled=true }}
     </div>
   {{/unless}}
-  {{em-input property="name" label=(t 'labels.name') class="required  col-sm-6 test-inv-name"}}
+  {{em-input property="name" label=(t 'models.inventory.labels.name') class="required  col-sm-6 test-inv-name"}}
   {{inventory/rank-select property="rank"}}
   {{#unless model.isNew}}
     <div class="form-group col-sm-2">
-      <label>{{t 'labels.quantity'}}</label>
+      <label>{{t 'models.inventory.labels.quantity'}}</label>
       <p class="form-control-static">{{model.quantity}}</p>
     </div>
   {{/unless}}
 </div>
 
-{{em-text label=(t 'labels.description') property="description" rows=1 }}
+{{em-text label=(t 'models.inventory.labels.description') property="description" rows=1 }}
 <div class="row">
-  {{em-select label=(t 'labels.type') property="inventoryType"
+  {{em-select label=(t 'models.inventory.labels.inventoryType') property="inventoryType"
     content=inventoryTypes
       class="required col-sm-4 test-inv-type"
       prompt=" "
   }}
-  {{em-input property="crossReference" label=(t 'inventory.labels.crossReference') class="col-sm-8 test-inv-cross"}}
+  {{em-input property="crossReference" label=(t 'models.inventory.labels.crossReference') class="col-sm-8 test-inv-cross"}}
 </div>
 <div class="row">
-  {{em-input property="reorderPoint" label=(t 'inventory.labels.reorderPoint') class="col-sm-3 test-inv-reorder"}}
-  {{number-input property="price" label=(t 'inventory.labels.salePricePerUnit') class="col-sm-3 test-inv-price"}}
-  {{em-select label=(t 'inventory.labels.distributionUnit') class="col-sm-3 required test-inv-dist-unit"
+  {{em-input property="reorderPoint" label=(t 'models.inventory.labels.reorderPoint') class="col-sm-3 test-inv-reorder"}}
+  {{number-input property="price" label=(t 'models.inventory.labels.salePricePerUnit') class="col-sm-3 test-inv-price"}}
+  {{em-select label=(t 'models.inventory.labels.distributionUnit') class="col-sm-3 required test-inv-dist-unit"
     property="distributionUnit"
     content=unitListForSelect
     prompt=" "

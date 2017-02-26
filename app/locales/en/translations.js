@@ -597,7 +597,7 @@ export default {
       remove: 'Remove',
       reorderPoint: 'Reorder Point',
       requestedItems: 'Requested Items',
-      salePricePerUnit: 'Sale Price per Unit',
+
       save: 'Save',
       serialNumber: 'Serial/Lot Number',
       total: 'Total',
@@ -1254,7 +1254,9 @@ export default {
         quantity: 'Quantity',
         reason: 'Reason',
         dateCompleted: 'Adjustment Date',
-        expenseAccount: 'Expense'
+        transactionType: 'Transaction',
+        expenseAccount: 'Expense',
+        details: 'Details'
       }
     },
     invPurchase: {
@@ -1266,17 +1268,34 @@ export default {
         location: 'Location',
         giftInKind: 'Gift in Kind',
         inventoryItem: 'Inventory Item',
-        distributionUnit: 'Unit',
+        distributionUnit: 'Distribution Unit',
         purchaseCost: 'Purchase Cost',
         vendorItemNo: 'Vendor Item Number',
         lotNumber: 'Serial/Lot Number',
-        expirationDate: 'Expiration Date'
+        expirationDate: 'Expiration Date',
+        originalQuantity: 'Original Quantity',
+        currentQuantity: 'Current Quantity',
+        costPerUnit: 'Cost per Unit'
+      }
+    },
+    invLocation: {
+      labels: {
+        location: 'Location',
+        aisleLocation: 'Aisle Location',
+        quantity: 'Quantity'
       }
     },
     inventory: {
       labels: {
         name: 'Name',
-        quantity: 'quantity'
+        quantity: 'Quantity',
+        description: 'Description',
+        inventoryType: 'Type',
+        salePricePerUnit: 'Sale Price per Unit',
+        distributionUnit: 'Distribution Unit',
+        reorderPoint: 'Reorder Point',
+        crossReference: 'Cross Reference',
+        id: 'ID'
       }
     },
     appointment: {

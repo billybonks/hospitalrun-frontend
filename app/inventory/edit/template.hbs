@@ -23,16 +23,16 @@
       </h3>
       <table class="table">
         <tr class="table-header">
-          <th>{{t 'inventory.labels.dateReceived'}}</th>
-          <th>{{t 'inventory.labels.purchaseCost'}}</th>
-          <th>{{t 'inventory.labels.costPerUnit'}}</th>
-          <th>{{t 'inventory.labels.originalQuantity'}}</th>
-          <th>{{t 'inventory.labels.currentQuantity'}}</th>
-          <th>{{t 'inventory.labels.gift'}}</th>
-          <th>{{t 'inventory.labels.serialNumber'}}</th>
-          <th>{{t 'inventory.labels.expirationDate'}}</th>
-          <th>{{t 'inventory.labels.vendor'}}</th>
-          <th>{{t 'inventory.labels.invoiceNumber'}}</th>
+          <th>{{t 'models.invPurchase.labels.dateReceived'}}</th>
+          <th>{{t 'models.invPurchase.labels.purchaseCost'}}</th>
+          <th>{{t 'models.invPurchase.labels.costPerUnit'}}</th>
+          <th>{{t 'models.invPurchase.labels.originalQuantity'}}</th>
+          <th>{{t 'models.invPurchase.labels.currentQuantity'}}</th>
+          <th>{{t 'models.invPurchase.labels.giftInKind'}}</th>
+          <th>{{t 'models.invPurchase.labels.lotNumber'}}</th>
+          <th>{{t 'models.invPurchase.labels.expirationDate'}}</th>
+          <th>{{t 'models.invPurchase.labels.vendor'}}</th>
+          <th>{{t 'models.invPurchase.labels.vendorItemNo'}}</th>
         </tr>
         {{#each model.purchases as |purchase|}}
           <tr class={{if purchase.expired "warning"}}>
@@ -60,9 +60,9 @@
       <h3>{{t 'inventory.labels.locations'}}</h3>
       <table class="table">
         <tr class="table-header">
-          <th>{{t 'inventory.labels.location'}}</th>
-          <th>{{t 'inventory.labels.aisleLocation'}}</th>
-          <th>{{t 'labels.quantity'}}</th>
+          <th>{{t 'models.invLocation.labels.location'}}</th>
+          <th>{{t 'models.invLocation.labels.aisleLocation'}}</th>
+          <th>{{t 'models.invLocation.labels.quantity'}}</th>
           {{#if canAdjustLocation}}
             <th>{{t 'labels.action'}}</th>
           {{/if}}
@@ -87,11 +87,11 @@
         <h3>{{t 'inventory.labels.transactions'}}</h3>
         <table class="table">
           <tr class="table-header">
-            <th>{{t 'inventory.labels.dateCompleted'}}</th>
-            <th>{{t 'labels.quantity'}}</th>
-            <th>{{t 'inventory.labels.transaction'}}</th>
-            <th>{{t 'inventory.labels.expense'}}</th>
-            <th>{{t 'inventory.labels.details'}}</th>
+            <th>{{t 'models.invRequest.labels.dateCompleted'}}</th>
+            <th>{{t 'models.invRequest.labels.quantity'}}</th>
+            <th>{{t 'models.invRequest.labels.transactionType'}}</th>
+            <th>{{t 'models.invRequest.labels.expenseAccount'}}</th>
+            <th>{{t 'models.invRequest.labels.details'}}</th>
           </tr>
           {{#if haveTransactions}}
             {{#each transactions as |transaction|}}
