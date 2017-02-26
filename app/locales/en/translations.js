@@ -597,7 +597,7 @@ export default {
       remove: 'Remove',
       reorderPoint: 'Reorder Point',
       requestedItems: 'Requested Items',
-
+      salePricePerUnit: 'Sale Price per Unit',
       save: 'Save',
       serialNumber: 'Serial/Lot Number',
       total: 'Total',
