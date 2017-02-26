@@ -1257,6 +1257,28 @@ export default {
         expenseAccount: 'Expense'
       }
     },
+    invPurchase: {
+      labels: {
+        dateReceived: 'Date Received',
+        vendor: 'Vendor',
+        invoiceNo: 'Invoice Number',
+        aisleLocation: 'Aisle Location',
+        location: 'Location',
+        giftInKind: 'Gift in Kind',
+        inventoryItem: 'Inventory Item',
+        distributionUnit: 'Unit',
+        purchaseCost: 'Purchase Cost',
+        vendorItemNo: 'Vendor Item Number',
+        lotNumber: 'Serial/Lot Number',
+        expirationDate: 'Expiration Date'
+      }
+    },
+    inventory: {
+      labels: {
+        name: 'Name',
+        quantity: 'quantity'
+      }
+    },
     appointment: {
       labels: {
         status: 'First Name',
