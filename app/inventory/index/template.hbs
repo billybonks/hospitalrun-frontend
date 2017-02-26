@@ -2,10 +2,10 @@
   {{#if hasRecords}}
     <table class="table">
       <tr class="table-header">
-        <th>{{t 'labels.name'}}</th>
-        <th>{{t 'labels.quantity'}}</th>
-        <th>{{t 'labels.requestedOn'}}</th>
-        <th>{{t 'labels.requestedBy'}}</th>
+        <th>{{t 'models.inventory.labels.name'}}</th>
+        <th>{{t 'models.invRequest.labels.quantity'}}</th>
+        <th>{{t 'models.invRequest.labels.dateRequested'}}</th>
+        <th>{{t 'models.invRequest.labels.requestedBy'}}</th>
         {{#if canFulfill}}
           <th>{{t 'labels.actions'}}</th>
         {{/if}}

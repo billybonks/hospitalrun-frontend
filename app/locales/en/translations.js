@@ -1251,8 +1251,10 @@ export default {
         inventoryItem: 'Item',
         locationsAffected: 'Adjustment For',
         adjustmentTypes: 'Adjustment Type',
+        dateRequested: 'Date Requested',
         quantity: 'Quantity',
         reason: 'Reason',
+        requestedBy: 'Requested By',
         dateCompleted: 'Adjustment Date',
         transactionType: 'Transaction',
         expenseAccount: 'Expense',
@@ -1295,6 +1297,7 @@ export default {
         distributionUnit: 'Distribution Unit',
         reorderPoint: 'Reorder Point',
         crossReference: 'Cross Reference',
+        locations: 'Locations',
         id: 'ID'
       }
     },
