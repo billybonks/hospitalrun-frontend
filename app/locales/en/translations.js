@@ -1258,7 +1258,8 @@ export default {
         dateCompleted: 'Adjustment Date',
         transactionType: 'Transaction',
         expenseAccount: 'Bill To',
-        details: 'Details'
+        details: 'Details',
+        deliveryLocation: 'Delivery Location'
       }
     },
     invPurchase: {
@@ -1279,7 +1280,6 @@ export default {
         currentQuantity: 'Current Quantity',
         costPerUnit: 'Cost per Unit',
         deliveryAisle: 'Delivery Aisle',
-        deliveryLocation: 'Delivery Location',
       }
     },
     invLocation: {
