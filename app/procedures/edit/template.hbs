@@ -1,45 +1,45 @@
 {{#edit-panel editPanelProps=editPanelProps}}
   {{#em-form model=model submitButton=false }}
     {{select-or-typeahead className="required procedure-description" property="description"
-      label="Procedure" list=procedureList
+      label=(t 'labels.procedures') list=procedureList
       selection=model.description hint=false
     }}
     <div class="row">
       {{select-or-typeahead className="col-xs-6" property="cptCode"
-        label="CPT Code" list=cptCodeList
+        label=(t 'models.procedure.labels.cptCode') list=cptCodeList
         selection=model.cptCode
       }}
     </div>
     <div class="row">
       {{select-or-typeahead className="col-sm-3" property="location"
-        label="Procedure Location" list=procedureLocations
+        label=(t 'models.procedure.labels.location') list=procedureLocations
         selection=model.location
       }}
-      {{date-picker property="procedureDate" label="Procedure Date" class="col-sm-3 required"}}
-      {{em-input property="timeStarted" label="Time Started" class="col-sm-3"}}
-      {{em-input property="timeEnded" label="Time Ended" class="col-sm-3"}}
+      {{date-picker property="procedureDate" label=(t 'models.procedure.labels.procedureDate') class="col-sm-3 required"}}
+      {{em-input property="timeStarted" label=(t 'models.procedure.labels.timeStarted') class="col-sm-3"}}
+      {{em-input property="timeEnded" label=(t 'models.procedure.labels.timeEnded') class="col-sm-3"}}
     </div>
     <div class="row">
       {{select-or-typeahead className="col-sm-4 required procedure-physician" property="physician"
-        label="Physician" list=physicianList
+        label=(t 'models.procedure.labels.physician') list=physicianList
         selection=model.physician
       }}
       {{select-or-typeahead className="col-sm-4" property="assistant"
-        label="Assistant" list=physicianList
+        label=(t 'models.procedure.labels.assistant') list=physicianList
         selection=model.assistant prompt=" "
       }}
       {{select-or-typeahead className="col-sm-4" property="anesthesiologist"
-        label="Anesthesiologist" list=anesthesiologistList
+        label=(t 'models.procedure.labels.anesthesiologist') list=anesthesiologistList
         selection=model.anesthesiologist
       }}
     </div>
     <div class="row">
       {{select-or-typeahead className="col-sm-4" property="anesthesiaType"
-        label="Anesthesia Type" list=anesthesiaTypes
+        label=(t 'models.procedure.labels.anesthesiaType') list=anesthesiaTypes
         selection=model.anesthesiaTypes
       }}
     </div>
-    {{em-text label="Notes" property="notes" rows=3 class="procedure-notes"}}
+    {{em-text label=(t 'models.procedure.labels.notes') property="notes" rows=3 class="procedure-notes"}}
     {{partial 'item-charges'}}
     <div class="panel detail-section medication-charges">
       <div class="panel-heading">

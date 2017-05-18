@@ -1326,6 +1326,20 @@ export default {
         status: 'Status'
       }
     },
+    procedure: {
+      labels: {
+        cptCode: 'CPT Code',
+        location: 'Procedure Location',
+        procedureDate: 'Procedure Date',
+        timeStarted: 'Time Started',
+        timeEnded: 'Time Ended',
+        physician: 'Physician',
+        assistant: 'Assistant',
+        anesthesiologist: 'Anesthesiologist',
+        anesthesiaType: 'Anesthesia Type',
+        notes: 'Notes'
+      }
+    },
     lab: {
       labels: {
         labDate: 'Date Completed',
