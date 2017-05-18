@@ -1313,6 +1313,19 @@ export default {
         visit: 'Visit'
       }
     },
+    medication: {
+      labels: {
+        patient: 'Patient',
+        visit: 'Visit',
+        medicationName: 'Medication',
+        requestedBy: 'Prescriber',
+        prescription: 'Prescription',
+        prescriptionDate: 'Prescription Date',
+        refills: 'Refills',
+        quantity: 'Quantity',
+        status: 'Status'
+      }
+    },
     lab: {
       labels: {
         labDate: 'Date Completed',
